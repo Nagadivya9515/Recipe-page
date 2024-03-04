@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @font-face {
+      font-family: Oblack;
+      src: url(./assets/fonts/outfit/static/Outfit-Black.ttf);
+
+    }
+
+    @font-face {
+      font-family: Obold;
+      src: url(./assets/fonts/outfit/static/Outfit-Bold.ttf);
+    }
+
+    @font-face {     
+      font-family: OExtrabold;
+      src: url(./assets/fonts/outfit/static/Outfit-ExtraBold.ttf);
+    }
+
+    @font-face {     
+      font-family: OExtralight;
+      src: url(./assets/fonts/outfit/static/Outfit-ExtraLight.ttf);
+    }
+
+    @font-face {
+      font-family: Olight;
+      src: url(./assets/fonts/outfit/static/Outfit-Light.ttf);
+    }
+
+    @font-face {
+      font-family: Omedium;
+      src: url(./assets/fonts/outfit/static/Outfit-Medium.ttf);
+    }
+
+    @font-face {
+      font-family: Oregular;
+      src: url(./assets/fonts/outfit/static/Outfit-Regular.ttf);
+    }
+
+    @font-face {
+      font-family: OSemibold;
+      src: url(./assets/fonts/outfit/static/Outfit-SemiBold.ttf);
+    }
+
+    @font-face {
+      font-family: Othin;
+      src: url(./assets/fonts/outfit/static/Outfit-Thin.ttf);
+    }
+
+    @font-face {
+      font-family: Ovar;
+      src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    }
+
+    @font-face {
+      font-family: Young;
+      src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    }
+
+    body {
+      background-color: hsl(30, 54%, 90%);
+;
+    }
+    .whole {
+      background-color: #fff;
+      border-radius: 10px;
+    }
+    .centered-c{
+      width: 70%;
+      margin: 0% 15%;
+    }
+
+    .centered {
+      margin: 2% 5%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      margin-top: 25px;
+      border-radius: 6px;
+    }
+
+    .main-heading{
+      font-family: Young;
+      font-weight: 400;
+      color: hsl(24, 5%, 18%);
+      padding: 0;
+    }
+
+    .main-description {
+      font-family: Olight;
+      padding: 0;
+    }
+    .first-box {
+      background-color: hsl(330, 100%, 98%);
+      border-radius: 5px;
+      padding: 2% 6%;
+      /* font-family: Oblack; */
+    }
+
+    
+
+    #li1-item , .li1-head{
+      line-height: 34px;
+      padding-left: 16px;
+      letter-spacing: 0.5px;
+      color: hsl(30, 10%, 34%);
+      font-family: Olight;
+      font-weight: 400;
+    }
+
+
+    .li1-head {
+      line-height: 24px;
+      color: hsl(332, 51%, 32%);
+      font-weight: 800;
+      font-family: OSemibold;
+    }
+
+    .li2-head {
+      font-family: Young;
+      font-weight: 400;
+      color: hsl(14, 45%, 36%);
+      letter-spacing: 1.2px;
+      
+
+    }
+    #li3-item {
+      line-height: 24px;
+      padding-left: 16px;
+      letter-spacing: 0px;
+      font-family: Olight;
+      color: hsl(14, 45%, 36%);
+      font-weight: 400;
+      margin-bottom: 1%;
+    }
+
+    #li1-item strong, #li3-item strong {
+      font-weight: 600;
+      font-family: OSemibold;
+    }
+
+    
+    .schedule-2 {padding-left: 2.5%;border-bottom: 1px solid lightgray;padding-bottom: 4%;}
+
+    table {
+      width: 80%;
+      padding-left: 5%;
+      padding-bottom: 10%;
+      border-collapse: collapse;
+      color:hsl(30, 10%, 34%);
+      
+    }
+
+    tr{
+      height: 50px;
+      border-bottom: 1px solid lightgrey;
+    }
+
+    tr>td {
+      font-family: Oregular;
+    }
+    .n1 {
+      color: hsl(14,45%,36%);
+      font-family: OExtrabold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="whole centered-c">
+  <div class="centered-img centered"><img src="./assets/images/image-omelette.jpeg" alt=""></div>
+  <h1  class="main-heading centered">Simple Omelette Recipe</h1>
+
+  <p class="main-description centered">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+  </p>
+  <div class="first-box centered">
+    <h3 class="li1-head">Preparation time</h3>
+      <ul class="schedule">
+        <li id="li1-item"><strong>Total:</strong> Approximately 10 minutes</li>
+        <li id="li1-item"><strong>Preparation:</strong> 5 minutes</li>
+        <li id="li1-item"><strong>Cooking:</strong> 5 minutes</li>
+      </ul>
+  </div>
+  <div class="second-box centered">
+    <h2 class="li2-head">Ingredients</h2>
+    <ul class="schedule-2">
+      <li id="li1-item" style="letter-spacing: 0.4px;">2-3 large eggs</li>
+      <li id="li1-item" style="letter-spacing: 0.4px;">Salt, to taste</li>
+      <li id="li1-item" style="letter-spacing: 0.4px;">Pepper, to taste</li>
+      <li id="li1-item" style="letter-spacing: 0.4px;">1 tablespoon of butter or oil</li>
+      <li id="li1-item" style="letter-spacing: 0.4px;">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+  </div>
+
+  <div class="second-box centered">
+  
+    <h2 class="li2-head">Instructions</h2>
+    <ol class="schedule-2">
+  
+
+      <li id="li3-item"><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+  You can add a tablespoon of water or milk for a fluffier texture.</li>
+
+  <li id="li3-item"><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.
+</li>
+<li id="li3-item"><strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+  the eggs evenly coat the surface.</li>
+
+  <li id="li3-item"><strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly runny in the 
+  middle, sprinkle your chosen fillings over one half of the omelette.</li>
+
+  <li id="li3-item"><strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the 
+  fillings. Let it cook for another minute, then slide it onto a plate.</li>
+
+  <li id="li3-item"><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.
+</li>
+</ol>
+</div>
+<div class="second-box centered">
+
+  <h2 class="li2-head">Nutrition</h2>
+      
+      
+      <p class="main-description" style="color:hsl(30, 10%, 34%);font-family: Oregular;">
+  The table below shows nutritional values per serving without the additional fillings.
+</p>
+<table class="main-description">
+  <tr>
+  <td>Calories</td>
+  <td class="n1">277kcal</td>
+  </tr>
+  <tr>
+  <td>Carbs</td>
+  <td class="n1">0g</td>
+</tr>
+<tr>
+  <td>Protein</td>
+  <td class="n1">20g</td>
+</tr>
+<tr>
+  <td>Fat</td>
+  <td class="n1">22g</td>
+  </tr>
+</table>
+  </div>
+  
+</body>
+</html>
